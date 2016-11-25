@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Links">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Enlaces de Instituciones PR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/heroic-features.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
+    <!-- <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/#/">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href='/#/add-inst'>A&ntilde;adir Instituci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a href="/#/stats">Estad&iacute;sticas</a>
+                    </li>
+                    <li>
+                        <a href="/#/dmzmgmt">DMZ Management</a>
+                    </li>
+                    <li>
+                        <a href="/#/">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="wrapper">
+    <ng-view>
+    
+    </ng-view>
+    
+    <div class="push"></div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <div id="footer">
+        <footer>
+            Copyright &copy; hrivera. | A simple SPA using MongoDB, Express, AngularJS and Nodejs - 2016
+        </footer>
+    </div>
+
+    
+    
+    <!-- jQuery -->
+    <script src="/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+    
+    <script src="/javascripts/angular-1.4.8/angular.js"></script>
+    <script src="/javascripts/angular-1.4.8/angular-resource.js"></script>
+    <script src="/javascripts/angular-1.4.8/angular-route.js"></script>
+
+    <script src="/javascripts/appAngular.js"></script>
+    <script src="/javascripts/AddInstCtrl.js"></script>
+    <script src="/javascripts/EditInstCtrl.js"></script>
+    <script src="/javascripts/DeleteInstCtrl.js"></script>
+    <script src="/javascripts/HomeCtrl.js"></script>        
+    <script src="/javascripts/InstData.js"></script> 
+    <script src="/javascripts/StatsCtrl.js"></script>
+    <script src="/javascripts/MoreInfoCtrl.js"></script>
+    <script src="/javascripts/DMZCtrl.js"></script>
+    <script src="/javascripts/AddDMZInfoCtrl.js"></script>
+    <script src="/javascripts/DeleteDMZInfoCtrl.js"></script>
+    <script src="/javascripts/DMZData.js"></script>
+    
+    <script src="/javascripts/angular-modal-service.min.js"></script>
+    
+    
+    
+
+</body>
+
+</html>

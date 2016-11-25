@@ -1,0 +1,92 @@
+
+<div class="bodycontainer">
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Enlaces de instituciones</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-4"> 
+        <h5 class="order-label"><strong>Municipios:</strong></h5>
+        <select ng-model="mcpio.location" class="dropdown-header order-filter">        
+            <option selected value="">Todos</option>
+            <option value="Pinar">Pinar del R&iacute;o</option>
+            <option value="San Juan">San Juan y Mart&iacute;nez</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Mantua">Mantua</option>
+            <option value="Consolaci">Consolaci&oacute;n del Sur</option>
+            <option value="Sandino">Sandino</option>
+            <option value="Guane">Guane</option>
+            <option value="Viñales">Vi&ntilde;ales</option>
+            <option value="Minas">Minas de Matahambre</option>
+        </select>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-4">
+        <h5 class="order-label"><strong>Mostrar: </strong></h5>
+        <select ng-model="query.type" class="dropdown-header order-filter">
+            <option selected value="">Todos</option>        
+            <option value="NODO">NODO</option>
+            <option value="policlinico">Policl&iacute;nico</option>
+            <option value="hospital">Hospital</option>
+            <option value="dir_salud">Direcci&oacute;n de Salud</option>
+            <option value="c_genetica">Centro de Gen&eacute;tica</option>
+            <option value="b_sangre">Banco de sangre</option>
+            <option value="c_higiene">Centro de Higiene</option>
+            <option value="filial">Filial Docente</option>
+            <option value="other">Otros...</option> 
+        </select>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        <h5 class="order-label"><strong>Buscar: </strong></h5>
+        <input type="search" ng-model="search_query" class="form-control form-group-sm order-filter" style="width: 170px; height: 25px;"/>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="row" ng-if="!dataLoaded">
+    <div class="data-loading-container">
+        <p class="text-center">
+            <img src="../images/load.gif"/> <br>
+            <span><strong>Cargando...</strong></span>
+        </p>            
+    </div>    
+</div>
+    
+<div class="row" align="center" ng-if="dataLoaded">   
+    <div class="col-lg-12">        
+    <table class="inst-table">
+        <thead>
+            <th>Tipo instituci&oacute;n</th>
+            <th>Nombre</th>
+            <th>Localidad</th>
+            <th>WAN</th>
+            <th>LAN</th>
+            <th>Tel&eacute;fono</th>            
+            <th>Acciones</th>
+        </thead>
+        <!--  | -->
+        <tbody>
+            <tr ng-repeat='institution in institutions | filter:mcpio | filter:query | filter:search_query' ng-class-even="evenRow" >
+                <td>{{type_names[institution.type]}}</td>
+                <td><a ng-click="showComplex(institution._id)" >{{institution.name}}</a></td>
+                <td>{{institution.location}}</td>
+                <td>{{institution.wan}}</td>
+                <td>{{institution.lan}}</td>                
+                <td>{{institution.phone_number}}</td>                
+                <td class="actions">
+                    <a href="/#/institution/{{institution._id}}">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a> | 
+                    <a href="/#/institution/delete/{{institution._id}}">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>     
+    </table>
+    </div>    
+</div>
+
+
+
+</div>

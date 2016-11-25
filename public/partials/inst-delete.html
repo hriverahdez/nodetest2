@@ -1,0 +1,19 @@
+<div class="bodycontainer">
+    <h1>Eliminar Instituci&oacute;n</h1>
+
+    <div class="well delete-details">
+    <p>
+        ¿Est&aacute; seguro que desea eliminar esta instituci&oacute;n?
+    </p>
+
+    <ul >
+        <li><strong>Nombre:</strong> {{institution.name}}</li>
+        <li><strong>Tipo:</strong> {{institution.type}}</li>
+        <li><strong>WAN:</strong> {{institution.wan}}</li>
+        <li><strong>LAN:</strong> {{institution.lan}}</li>
+        <li><strong>Estado:</strong> {{institution.state}}</li>
+    </ul>
+    </div>
+    <input type="button" value="S&iacute, eliminar" class="btn btn-danger" ng-click="delete()" />
+    <a class="btn btn-default" href="/#/">No, ir atr&aacute;s</a>
+</div>

@@ -1,0 +1,17 @@
+<div class="bodycontainer">
+    <h1>Eliminar Host</h1>
+
+    <div class="well delete-details">
+    <p>
+        ¿Est&aacute; seguro que desea eliminar este host de la DMZ?
+    </p>
+
+    <ul >
+        <li><strong>Direcci&oacute;n IP:</strong> {{dmz.ip}}</li>
+        <li><strong>Hostname:</strong> {{dmz.hostname}}</li>
+        <li><strong>Descripci&oacute;n:</strong> {{dmz.description}}</li>        
+    </ul>
+    </div>
+    <input type="button" value="S&iacute, eliminar" class="btn btn-danger" ng-click="delete()" />
+    <a class="btn btn-default" href="/#/">No, ir atr&aacute;s</a>
+</div>

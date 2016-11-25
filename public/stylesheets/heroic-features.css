@@ -1,0 +1,208 @@
+
+/*!
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
+}
+
+.bodycontainer{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    min-height: 525px;
+}
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 17px 0;
+}
+
+.order-label {
+    margin-left: 30px;
+    padding-top: 2px;
+    float: left;
+}
+
+.order-filter{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.container input {
+    margin: 4px 0px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+table thead, table tfoot { background: #e5e5e5; }
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { display: table-cell; font-size: 14px; line-height: 18px; text-align: left; }
+
+table thead tr th, table tfoot tr td { padding: 8px 20px 9px; font-size: 14px; font-weight: bold; color: #222; }
+
+
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+
+
+table tbody tr td { color: #333; padding: 9px 20px; vertical-align: top; border: none; }
+
+a[ng-click]{
+    cursor:pointer;
+}
+
+.even-row {
+    background-color: #EEEEEE;
+}
+
+.inst-table{
+    width:95%;
+    margin-bottom: 25px;
+}
+
+.info {    
+    text-align: left;
+    padding: 0px 5px;
+    width: 22%;
+    margin-left:-6px;
+}
+
+.info .thumbnail {
+    padding-bottom: 20px;
+}
+
+.thumbnail h4 {
+    padding-left:12px;
+    padding-bottom: 4px;
+}
+
+.info-row {
+    padding-left:12px;
+    
+}
+
+.info-left {
+    width: 50%;
+    float:left;
+    padding-bottom: 4px;
+}
+
+.info-right {
+    width: 50%;
+    float: left;
+    padding-bottom: 4px;
+}
+
+.actions {
+    text-align: center;
+}
+
+.add-inst-form {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+fieldset input {
+    margin-bottom: 5px !important;
+}
+
+fieldset.inst-form-1 {
+    width: 45%;
+    float:left;
+    padding-right:5%;
+}
+
+fieldset.inst-form-2 {
+    padding-right: 5%;
+    width: 45%;
+    float:right;
+}
+
+.inst-form-btns {
+    width:95%;
+}
+
+.delete-details {
+    width: 45%;
+    font-size: 16px;
+}
+.delete-details ul {
+    list-style-type: none;
+}
+
+.load-more {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    
+    bottom: 100%;
+	clear: both;
+	background: #464d51;
+	color: #a7b2b9;
+	font-family: "Source Sans Pro", "Segoe UI Light", "Segoe UI", Frutiger, "Frutiger Linotype", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
+	padding: 10px 50px 10px 50px; 
+}
+
+.page-navigation {
+    margin-top: 20px;    
+    margin-bottom: 70px;    
+}
+
+
+.info-fixed {
+    position: fixed;
+    z-index: 1000;
+    top:100;
+    
+}
+
+.dmz-well {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.dmz-input {
+    display: inline-block !important;
+    width: 30% !important;
+}
+
+.data-loading-container {
+    padding-top: 8%;
+}
+
+/*make footer stick to bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -80px;
+}
+#footer,
+.push {
+  height: 80px;
+}
